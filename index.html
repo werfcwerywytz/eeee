@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Lines - Агро-промышленная продукция</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+        <div class="header-content">
+          <!-- Logo -->
+          <img src="logo-main.png" alt="Green Lines Logo" class="logo" />
+
+          <!-- Desktop Navigation -->
+          <nav class="nav-desktop" id="navDesktop">
+            <button class="nav-btn" data-tab="о компании">о компании</button>
+            <button class="nav-btn active" data-tab="продукция">
+              продукция
+            </button>
+            <button class="nav-btn" data-tab="почему мы">почему мы</button>
+            <button class="nav-btn" data-tab="вакансии">вакансии</button>
+            <button class="nav-btn" data-tab="стажировки">стажировки</button>
+            <button class="nav-btn" data-tab="промышленный туризм">
+              промышленный туризм
+            </button>
+            <button class="nav-btn" data-tab="карьерная история">
+              карьерная история
+            </button>
+            <button class="nav-btn" data-tab="контакты">контакты</button>
+          </nav>
+
+          <!-- Mobile Menu Button -->
+          <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <svg
+              class="menu-icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            <svg
+              class="close-icon hidden"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+
+          <!-- Submit Button -->
+          <button class="btn btn-primary" id="submitBtn">
+            Оставить заявку
+          </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav class="nav-mobile hidden" id="navMobile">
+          <button class="nav-mobile-btn" data-tab="о компании">
+            о компании
+          </button>
+          <button class="nav-mobile-btn active" data-tab="продукция">
+            продукция
+          </button>
+          <button class="nav-mobile-btn" data-tab="почему мы">почему мы</button>
+          <button class="nav-mobile-btn" data-tab="вакансии">вакансии</button>
+          <button class="nav-mobile-btn" data-tab="стажировки">
+            стажировки
+          </button>
+          <button class="nav-mobile-btn" data-tab="промышленный туризм">
+            промышленный туризм
+          </button>
+          <button class="nav-mobile-btn" data-tab="карьерная история">
+            карьерная история
+          </button>
+          <button class="nav-mobile-btn" data-tab="контакты">контакты</button>
+          <button class="btn btn-primary btn-mobile" id="submitBtnMobile">
+            Оставить заявку
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div
+        class="hero-background"
+        style="background-image: url(&quot;products/all.png&quot;)"
+      ></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">НАША ПРОДУКЦИЯ</h1>
+        <button class="scroll-btn" id="scrollBtn">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main">
+      <!-- Products Section -->
+      <section class="products-section" id="productsSection">
+        <div class="section-container">
+          <!-- Products Carousel -->
+          <div class="carousel-wrapper">
+            <div class="carousel" id="carousel">
+              <!-- Products will be inserted here by JavaScript -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <!-- Logo -->
+          <div class="footer-logo">
+            <img
+              src="logo-white.webp"
+              alt="Green Lines Logo"
+              class="footer-logo-img"
+            />
+          </div>
+
+          <!-- Footer Links -->
+          <div class="footer-links">
+            <h4 class="footer-title">ОСТАВАЙТЕСЬ С НАМИ НА СВЯЗИ</h4>
+            <ul class="footer-list">
+              <li>
+                <a href="#"
+                  >Головной офис: Россия, обл. Калужская, р-н Барятинский, с.
+                  Барятино, ул. 1 Мая. д. 101</a
+                >
+              </li>
+              <li>
+                <a href="#">Телефон: +7 (495) 937-87-65</a>
+              </li>
+              <li>
+                <a href="#">E-mail: career@ssnab.ru</a>
+              </li>
+              <li class="footer-socials">
+                <a href="https://t.me/zlkaluga" aria-label="Telegram">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 30 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15C0 6.71573 6.71573 0 15 0C23.2843 0 30 6.71573 30 15ZM15.5375 11.0737C14.0786 11.6805 11.1627 12.9365 6.78987 14.8417C6.07979 15.124 5.70782 15.4003 5.67396 15.6704C5.61673 16.1269 6.18839 16.3066 6.96684 16.5514C7.07273 16.5847 7.18244 16.6192 7.29492 16.6558C8.0608 16.9047 9.09103 17.196 9.62661 17.2075C10.1124 17.218 10.6547 17.0177 11.2533 16.6067C15.3389 13.8488 17.448 12.4548 17.5804 12.4247C17.6738 12.4035 17.8032 12.3769 17.891 12.4548C17.9787 12.5328 17.97 12.6804 17.9608 12.72C17.9041 12.9614 15.6602 15.0476 14.4989 16.1272C14.1369 16.4638 13.8801 16.7025 13.8276 16.757C13.71 16.8792 13.5902 16.9947 13.475 17.1058C12.7635 17.7917 12.2299 18.306 13.5045 19.146C14.1171 19.5496 14.6072 19.8834 15.0962 20.2164C15.6302 20.5801 16.1629 20.9428 16.852 21.3946C17.0276 21.5097 17.1953 21.6292 17.3586 21.7457C17.9801 22.1887 18.5384 22.5868 19.2282 22.5233C19.6291 22.4864 20.0431 22.1095 20.2533 20.9854C20.7503 18.3289 21.727 12.5731 21.9528 10.2012C21.9726 9.99341 21.9477 9.72746 21.9277 9.61072C21.9077 9.49397 21.866 9.32763 21.7142 9.2045C21.5345 9.05867 21.257 9.02792 21.133 9.0301C20.5688 9.04004 19.7032 9.34102 15.5375 11.0737Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <a href="https://vk.com/zlkaluga" aria-label="VK">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 30 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M2.10883 2.10883C0 4.21766 0 7.61175 0 14.4V15.6C0 22.3882 0 25.7823 2.10883 27.8912C4.21766 30 7.61175 30 14.4 30H15.6C22.3882 30 25.7823 30 27.8912 27.8912C30 25.7823 30 22.3882 30 15.6V14.4C30 7.61175 30 4.21766 27.8912 2.10883C25.7823 0 22.3882 0 15.6 0H14.4C7.61175 0 4.21766 0 2.10883 2.10883ZM5.06257 9.12506C5.22507 16.9251 9.12506 21.6126 15.9626 21.6126H16.3501V17.1501C18.8626 17.4001 20.7625 19.2376 21.525 21.6126H25.0751C24.1001 18.0626 21.5374 16.1001 19.9374 15.3501C21.5374 14.4251 23.7874 12.1751 24.3249 9.12506H21.0999C20.3999 11.6001 18.3251 13.8501 16.3501 14.0626V9.12506H13.125V17.7751C11.125 17.2751 8.60006 14.8501 8.48756 9.12506H5.06257Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Product Details Modal -->
+    <div class="modal hidden" id="productModal">
+      <div class="modal-overlay" id="modalOverlay"></div>
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+        <div class="modal-grid">
+          <div class="modal-image">
+            <img id="modalProductImage" src="" alt="" />
+          </div>
+          <div class="modal-info">
+            <h2 id="modalProductName"></h2>
+            <p id="modalProductDescription"></p>
+            <div class="modal-footer">
+              <button class="btn btn-primary">Оставить заявку</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top hidden" id="scrollToTop">
+      <svg
+        width="32"
+        height="32"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </button>
+
+    <!-- Request Form Modal -->
+    <div class="modal hidden" id="requestModal">
+      <div class="modal-overlay" id="requestModalOverlay"></div>
+      <div class="modal-content request-modal-content">
+        <button class="modal-close" id="requestModalClose">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+        <h2>Оставить заявку</h2>
+        <form id="requestForm">
+          <div class="form-group">
+            <label for="name">Имя</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" />
+          </div>
+          <div class="form-group">
+            <label for="message">Сообщение</label>
+            <textarea id="message" rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Отправить</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
