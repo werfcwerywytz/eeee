@@ -588,7 +588,7 @@ th {
   align-items: center;
   justify-content: center;
   min-height: 20rem;
-  background-color: var(--background);
+  /*background-color: var(--background);*/
   border-radius: 0.5rem;
 }
 
